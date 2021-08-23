@@ -13,14 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: 김진우의 개발일지
+email: 1geraldine1@naver.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+  백번 듣는것보다 한번 보는것이 낫고, 백번 보는것보다 한번 행하는것이 낫다.
+  배운것을 적으며 복습하고, 기록을 남기고자 개설한 블로그입니다.
+# twitter_username: username #트위터 안합니다. 트위터는 인생의 낭비!
+github_username: 1geraldine1 #부족하지만, 지금부터라도 깃허브 관리해보려 합니다.
 minimal_mistakes_skin: default
 search: true
 
@@ -29,7 +28,7 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 5 # amount of posts to show # 페이지당 보여줄 게시물 개수. 수정할 가능성이 높으니 미리 기록.
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -58,8 +57,8 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
+  name   : "JinWoo Kim"
+  avatar : "/assets/images/bio-photo.jpg" #
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "Website"
