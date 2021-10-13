@@ -62,6 +62,12 @@ tags:
 
   라는 부분에서 오류가 발생했다.
 
+* 해결법은 [이 글](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=guseod24&logNo=221483037145)에서 찾을수 있었다.
+  * 템플릿 문법이 들어가는곳을 역슬래시를 제외한 {% \raw %} {% \endraw %} 태그로 감싸주면 템플릿 문법을 문자 그대로 인식하여 문제가 해결된다.
+
+* 결과적으로 github 리포지토리의 용량 제한이 문제가 아니었기에 images폴더는 전부 복구해두었다.
+
+
  
 
   
