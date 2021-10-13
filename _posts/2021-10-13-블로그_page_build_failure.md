@@ -39,14 +39,24 @@ tags:
 
 * 분명 github.io 블로그는 github에 저장된 내용을 기반으로 띄워주는것일텐데, 내 github 저장소에 images 폴더가 없음에도 불구하고 블로그에서는 마치 있는것처럼 이미지가 정상적으로 출력되고 있었다.
 
+<img src="https://1geraldine1.github.io/assets/images/Blog/Trouble_Shooting/에러01.PNG"/>
+
+<img src="https://1geraldine1.github.io/assets/images/Blog/Trouble_Shooting/에러02.PNG"/>
+
+<img src="https://1geraldine1.github.io/assets/images/Blog/Trouble_Shooting/에러03.PNG"/>
+
 * github에 "업로드 되는 파일의 크기제한"이 50MB인데 github저장소에 이미 존재했던 images폴더의 크기때문에 오류가 발생한것도 그렇고, 아무래도 블로그에 커밋을 진행할때마다 다른 어딘가에 별도로 업로드가 진행되는것 같다는 느낌을 받았다.
 
 * config.yml파일을 수정하여 블로그 테마를 수정하는것이 어떨까 싶어 Github에서 직접 config.yml을 확인해보기로 했다.
 
+<img src="https://1geraldine1.github.io/assets/images/Blog/Trouble_Shooting/에러04.PNG"/>
+
 * x 표시를 클릭하니 다음과 같은 오류 메시지를 확인할수 있었다.
 
+<img src="https://1geraldine1.github.io/assets/images/Blog/Trouble_Shooting/에러05.PNG"/>
+
 * 즉, 내가 생각했던 이미지 용량 부족이 원인이 아니라 3일차의 글에서 오류가 발생했다는것.
-  * 왜 3일차에 쓴 글이 이제와서 오류가 발생한건지는 납득할수 없었지만, 그즈음에 뭔가 수정했겠거니 하고 넘어가기로 했다.
+  * 왜 3일차에 쓴 글이 이제와서 오류가 발생한건지는 납득할수 없었지만, 그즈음에 내가 뭔가 수정했겠거니 하고 넘어가기로 했다.
 
 * 비슷한 오류들이 지속적으로 발견됨에 따라 하나의 공통점을 찾을수 있었는데, 해당 문제점이 템플릿 문법이 글 내부에 들어가있을때 나타나는 오류들이었다.
 
