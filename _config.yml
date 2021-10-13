@@ -64,13 +64,13 @@ author:
     # - label: "Website"   이력서같은거라도 io페이지로 만들어 올려보자.
     #   icon: "fas fa-fw fa-link"
     #   url: "https://"
-    # - label: "Twitter"   트위터는 인생의 낭비.
+    # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   url: "https://twitter.com/"
-    - label: "GitHub"
+    - label: "1geraldine1"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/1geraldine1"
-    # - label: "Instagram"  이쯤되니 내 인생이 되게 팍팍해보인다..
+    # - label: "Instagram" 
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
 
