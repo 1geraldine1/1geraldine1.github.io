@@ -138,7 +138,15 @@ tags:
 
 
 
+## 참고 문서
+
+[Dacon 오늘의 파이썬](https://dacon.io/competitions/open/235698/talkboard/403458?page=1&dtype=recent)
+
+[Dacon.kyle님의 Github - 의사결정나무](https://github.com/pyohamen/Im-Being-Data-Scientist/wiki/what-is-decision-tree%3F)
+
+[ratsgo님의 탐욕알고리즘에 대한 정리글](https://ratsgo.github.io/data%20structure&algorithm/2017/11/22/greedy/)
     
+[janghw님의 분할정복 알고리즘에 대한 정리글](https://janghw.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-Divide-and-Conquer-%EB%B6%84%ED%95%A0%EC%A0%95%EB%B3%B5)
     
 
 
