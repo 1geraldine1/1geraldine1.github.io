@@ -1,5 +1,5 @@
 ---
-title: "Dacon Daily Python Camp 1일차 공부"
+title: "Dacon Daily Python Camp 2일차 공부"
 date: 2021-11-12T18:30:00-04:00
 categories:
   - '2021-11 TIL'
