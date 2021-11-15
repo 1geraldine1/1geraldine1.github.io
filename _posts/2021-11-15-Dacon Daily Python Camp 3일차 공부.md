@@ -53,7 +53,32 @@ tags:
   * 뿌리 노드로부터 내려갈 수 있는 깊이를 지정하며 작을수록 트리가 작아짐.
 
 * 최소 노드크기(min_samples_split)
+  * 노드를 분할하기 위한 데이터 수
+  * 해당 노드에 이 값보다 적은 확률변수 수가 있다면 stop.
+  * 작을수록 트리는 커짐.
 
 * 최소 향상도(min_impurity_decrease)
+  * 노드를 분할하기 위한 최소 향상도
+  * 향상도가 설정값 이하라면 더이상 분할하지 않음.
+  * 작을수록 트리는 커짐.
 
 * 비용복잡도(Cost-complexity)
+  * 트리가 커지는것에 대한 패널티 계수
+  * 불순도와 트리가 커지는것에 대한 복잡도를 계산함.
+
+* 위와 같은 정지규칙들을 종합적으로 고려해 최적의 조건값을 찾는것을 하이퍼파라미터 튜닝이라함.
+
+* 다양한 방법론이 존재하지만, Best 성능을 나타내는 GridSearch는 완전탐색을 사용.
+
+  * 가능한 모든 조합중 가장 우수한 조합을 찾아줌.
+  * 하지만 완전탐색이므로 Best 조합을 찾을때까지 시간이 매우 오래 걸림. 
+
+## GridSearch 구현
+
+> from sklearn.model_selection import GridSearchCV  
+> model = RandomForestRegressor(criterion = 'mse', random_state=2020)  
+> params = {'n_estimators': [200, 300, 500],
+          'max_features': [5, 6, 8],
+          'min_samples_leaf': [1, 3, 5]}  
+> greedy_CV = GridSearchCV(model, param_grid=params, cv = 3, n_jobs = -1)
+greedy_CV.fit(X_train, Y_train)
