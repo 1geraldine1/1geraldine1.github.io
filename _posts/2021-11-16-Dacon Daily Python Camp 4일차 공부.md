@@ -42,8 +42,6 @@ tags:
 
 > sns.distplot(df['피쳐명'], kde=True, bins=None)  
 
-* 
-
 
 ## 용어 해설
 
