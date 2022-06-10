@@ -1,6 +1,6 @@
 ---
 title: "Minimal-mistake에서의 Latex 설정 및 그외의 세부 설정"
-date: 2021-08-23T18:08:30-04:00
+date: 2022-06-10T18:08:30-04:00
 categories:
   - '2022-06 TIL'
 tags:
