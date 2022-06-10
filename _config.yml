@@ -97,6 +97,10 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
+      comments: true
+      search: true
+      yandex_site_verification: "2132801JL"
   # _pages
   - scope:
       path: "_pages"
