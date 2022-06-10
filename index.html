@@ -5,3 +5,7 @@
 layout: home
 author_profile: true
 ---
+
+{% if page.use_math %}
+  {% include mathjax_support.html %}
+{% endif %}
