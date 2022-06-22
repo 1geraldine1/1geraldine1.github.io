@@ -41,7 +41,7 @@ tags:
 
   * 특징
 
-    * 이 데이터는 
+    <img src=https://1geraldine1.github.io/assets/images/Study/zerobase/animalpose/dataset_info_01.PNG  />
 
 
 # Animal Pose Estimation
