@@ -8,6 +8,7 @@ tags:
   - 'TIL'
   - 'Pose estimation'
   - '반려동물 행동 예측'
+  - 'DeepLabCut'
 ---
 
 # DeepLabCut
