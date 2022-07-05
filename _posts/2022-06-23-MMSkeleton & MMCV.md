@@ -1,10 +1,10 @@
 ---
 title: "MMSkeleton & MMCV"
-date: 2022-06-22T18:08:30-04:00
+date: 2022-06-23T18:08:30-04:00
 categories:
   - '2022-06 TIL'
 tags:
-  - '20220622'
+  - '20220623'
   - 'TIL'
   - 'Pose estimation'
   - '반려동물 행동 예측'
@@ -69,20 +69,42 @@ tags:
   * $T$는 frame 개수, $N$은 한 skeleton에서 joint의 갯수이다.
   * $V = \big\{ vti|t = 1, . . . , T, i = 1, . . . , N \big\}$
 
+## GCN
+
+* Spatial-based Graph Convolutional Neural Networks
+
+  * Spatial-based : 공간 기반.
+  * Graph : 그래프
+  * Convolutional Neural Networks : 컨볼루셔널 신경망(CNN)
+
+  -> 그래프에서 노드의 공간적인 관계에 기반하여 convolution을 수행하는 신경망.
+
+* 한 노드에서 이웃 노드들에 대한 정보를 가져와서, 가져온 주변 노드들에 weight를 곱해주는 방식으로 진행된다.
+
+## Partition Stratigies
+
+* 이러한 GCN은 그 특성상 "이웃 노드"를 정의하는 방식이 여러가지일수 있다.
+
+  ![skeleton grouping type](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FG5sAW%2FbtqxG6OSV82%2Fyz3IkJmEkgbNW3FZd6UgNK%2Fimg.png)
+
+  * (a)와 같은 skeleton graph가 존재할때,
+  * (b)는 거리가 1인 노드를 하나의 subset으로 묶는 경우
+  * (c)는 path의 길이에 weight를 준 경우
+  * (d)는 각 노드에서 중심 좌표(x표시 된 부분)까지의 거리순으로 weight를 준 경우
+
+* 해당 논문에서는 (d)방식이 가장 좋은 성능을 냈다고 한다.
+
+## 해당 논문의 한계
+
+* 위의 Partition Stratigies 항목에서 볼수 있듯, ST-GCN은 인접한 관절간의 관계성밖에 찾지 못한다.
+
+  * 하지만 사람의 행동은 인접한 관절간의 관계만으로는 설명하기 부족하므로, 왼손과 오른발의 관계등에 대해서는 이 논문만으로 설명할수 없다.
+
+* 이러한 단점을 해소하기 위해 해당 연구진은 다음해 발표한 AS-GCN에서 Actional-Link 개념을 제시하거나, Attention과 LSTM을 추가해 시/공간상에서의 feature를 추출하는등 방법을 제시했다.
+
 
 # 참고한 글
-
-* 
 
 * [mmskeleton - Start Action Recognition Using ST-GCN](https://github.com/open-mmlab/mmskeleton/blob/master/doc/START_RECOGNITION.md)
 
 * [논문 읽어주는 석사생 님의 ST-GCN 논문 정리글](https://reading-cv-paper.tistory.com/entry/AAAI-2018Spatial-Temporal-Graph-Convolutional-Networks-for-Skeleton-Based-Action-Recognition#recentComments)
-
-
-
-
-
-
-------
-
-<a name="footnote_1">[1]</a> : 
